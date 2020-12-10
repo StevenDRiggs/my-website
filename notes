@@ -1,0 +1,15 @@
+NavLinks: portfolio, about, blog, view/download resumes, contact
+hidden login for updating content 
+only when logged in, content may be added, changed, or deleted
+animated transitions
+don't use fade to black mouseovers (overused)
+don't make them scroll forever
+don't make a stupid website
+remember target="_blank" when necessary
+
+portfolio: each project shows skills/stack used
+infinite animation(s) can make up for lack of options
+
+? content stored in secure database ?
+
+comfortable, natural and interesting navigation and visuals

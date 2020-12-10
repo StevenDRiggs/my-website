@@ -1,0 +1,7 @@
+button .secret-button-false {
+    background-color: rgba(0,0,0,0);
+}
+
+button .secret-button-true {
+    background-color: rgba(0,0,150,0.5);
+}

@@ -1,7 +1,18 @@
-button .secret-button-false {
-    background-color: rgba(0,0,0,0);
+div.secret-div {
+    display: flex;
+    width: 150px;
+    height: 50px;
+
 }
 
-button .secret-button-true {
+div.secret-div-false {
+    background-color: rgba(0,0,0,0);
+    width: 30%;
+    height: 100%;
+}
+
+div.secret-div-true {
     background-color: rgba(0,0,150,0.5);
+    width: 30%;
+    height: 100%;
 }

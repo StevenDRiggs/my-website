@@ -30,34 +30,36 @@ class App extends Component {
     ...initialState,
   }
 
-  handleSecretButtonClick = event => {
-    const { first, second, third } = this.state
+  handleSecretDivClick = event => {
     switch (event.target.id) {
       case 'first':
         this.setState({
-          first: !first,
+          first: !this.state.first,
           second: false,
           third: false,
         })
+        break
 
       case 'second':
-        if (first) {
+        if (this.state.first) {
           this.setState({
             ...this.state,
-            second: !second,
+            second: !this.state.second,
             third: false,
           })
         } else {
+          console.log('what?')
           this.setState({
             ...initialState,
           })
         }
+        break
 
       case 'third':
-        if (first && second) {
+        if (this.state.first && this.state.second) {
           this.setState({
             ...this.state,
-            third: !third,
+            third: !this.state.third,
           })
         } else {
           this.setState({
@@ -72,19 +74,25 @@ class App extends Component {
 
     return (
       <div className="App">
-        <button className={`secret-button-${first}`} onClick={this.handleSecretButtonClick} id='first' />
-        <button className={`secret-button-${second}`} onClick={this.handleSecretButtonClick} id='second' />
-        <button className={`secret-button-${third}`} onClick={this.handleSecretButtonClick} id='third' />
+        <div className='secret-div'>
+          <div className={`secret-div-${first}`} onClick={this.handleSecretDivClick} id='first'></div>
+          <div className={`secret-div-${second}`} onClick={this.handleSecretDivClick} id='second'></div>
+          <div className={`secret-div-${third}`} onClick={this.handleSecretDivClick} id='third'></div>
+        </div>
         <Router>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/portfolio' component={Portfolio} />
-            <Route path='/about' component={About} />
-            <Route path={['/blog', '/wtf']} component={Blog} />
-            <Route path={['/resume', '/resumes']} component={Resumes} />
-            <Route path='/contact' component={Contact} />
-            {first && second && third ? <Redirect to='/' /> : null}
-          </Switch>
+          {first && second && third
+            ?
+              <Login />
+            :
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/portfolio' component={Portfolio} />
+                <Route path='/about' component={About} />
+                <Route path={['/blog', '/wtf']} component={Blog} />
+                <Route path={['/resume', '/resumes']} component={Resumes} />
+                <Route path='/contact' component={Contact} />
+              </Switch>
+          }
         </Router>
       </div>
     );

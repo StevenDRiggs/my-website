@@ -1,7 +1,6 @@
 const Resumes = () => {
   return (
     <div>
-      Resumes
     </div>
   )
 }

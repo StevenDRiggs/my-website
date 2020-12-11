@@ -1,11 +1,5 @@
 import { NavLink } from 'react-router-dom'
 
-import Portfolio from './Portfolio'
-import About from '../components/About'
-import Blog from './Blog'
-import Resumes from '../components/Resumes'
-import Contact from '../forms/Contact'
-
 import './NavBar.css'
 
 

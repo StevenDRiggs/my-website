@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
+  Link,
 } from 'react-router-dom'
 
 import Portfolio from './containers/Portfolio'
@@ -13,6 +14,8 @@ import Contact from './forms/Contact'
 import Home from './components/Home'
 import Login from './forms/Login'
 import NavBar from './containers/NavBar'
+
+import { ReactComponent as Logo } from './images/logo.svg'
 
 import './App.css';
 
@@ -80,6 +83,9 @@ class App extends Component {
         </div>
         <Router>
           <NavBar />
+          <Link to='/'>
+            <Logo id='logo' />
+          </Link>
           {first && second && third
             ?
               <Login />

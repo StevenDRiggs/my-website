@@ -1,18 +1,25 @@
+div.App {
+    position: relative;
+}
+
 div.secret-div {
     display: flex;
-    width: 150px;
-    height: 50px;
-
+    flex-direction: column;
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    top: 4rem;
+    right: 0;
 }
 
 div.secret-div-false {
     background-color: rgba(0,0,0,0);
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
 }
 
 div.secret-div-true {
     background-color: rgba(0,0,150,0.5);
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
 }

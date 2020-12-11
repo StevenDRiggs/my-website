@@ -1,0 +1,28 @@
+div.navbar {
+  width: 100vw;
+  height: 4em;
+  position: sticky;
+  top: 0;
+  background-color: #04587f;
+  padding-top: 1.5em;
+}
+
+div.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.navlink {
+  padding: 1em 1.5em;
+}
+
+.navlink:hover, .navlink.active {
+  background-color: #5e587f;
+}
+
+.navlink, .navlink:active, .navlink:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}

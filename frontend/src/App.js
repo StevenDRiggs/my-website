@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
-  NavLink,
   Route,
   Switch,
-  Redirect,
 } from 'react-router-dom'
 
 import Portfolio from './containers/Portfolio'
@@ -14,6 +12,7 @@ import Resumes from './components/Resumes'
 import Contact from './forms/Contact'
 import Home from './components/Home'
 import Login from './forms/Login'
+import NavBar from './containers/NavBar'
 
 import './App.css';
 
@@ -80,6 +79,7 @@ class App extends Component {
           <div className={`secret-div-${third}`} onClick={this.handleSecretDivClick} id='third'></div>
         </div>
         <Router>
+          <NavBar />
           {first && second && third
             ?
               <Login />

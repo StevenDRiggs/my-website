@@ -4,7 +4,8 @@ div.navbar {
   position: sticky;
   top: 0;
   background-color: #04587f;
-  padding-top: 1.5em;
+  padding-top: 1.2em;
+  font-family: 'Fugaz One', cursive;
 }
 
 div.navbar ul {

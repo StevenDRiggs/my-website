@@ -1,3 +1,40 @@
-<svg viewBox="0 0 1000 1000">
-  <circle cx="500" cy="500" r="500" stroke="none" fill="red" />
+<svg viewBox="0 0 100 100">
+  <defs>
+    <pattern id="h-grid" x="0" y="0" width="0.05" height="1">
+      <rect x="0" y="0" width="1" height="1" fill="white" stroke="gray" stroke-width="0.1" />
+      <rect x="1" y="0" width="1" height="1" fill="white" stroke="gray" stroke-width="0.1" />
+      <rect x="2" y="0" width="1" height="1" fill="white" stroke="gray" stroke-width="0.1" />
+      <rect x="3" y="0" width="1" height="1" fill="white" stroke="gray" stroke-width="0.1" />
+      <rect x="4" y="0" width="1" height="1" fill="gray" stroke="white" stroke-width="0.1" />
+    </pattern>
+
+    <pattern id="h-line" x="0" y="0" width="0.01" height="1">
+      <rect x="0" y="0" width="1" height="1" fill="gray" stroke="white" stroke-width="0.1" />
+    </pattern>
+
+    <pattern id="v-grid" x="0" y="0" width="1" height="0.05">
+      <rect x="0" y="0" width="100" height="1" fill="url(#h-grid)" />
+      <rect x="0" y="1" width="100" height="1" fill="url(#h-grid)" />
+      <rect x="0" y="2" width="100" height="1" fill="url(#h-grid)" />
+      <rect x="0" y="3" width="100" height="1" fill="url(#h-grid)" />
+      <rect x="0" y="4" width="100" height="1" fill="url(#h-line)" />
+    </pattern>
+  </defs>
+
+  <rect fill="url(#v-grid)" width="100px" height="100px" />
+
+  <path id="branch" stroke="black" stroke-width="3" stroke-linecap="square" fill="none" d="M 40 10 Q 46 11 60 10" />
+
+  <path id="stem" stroke="none" stroke-linecap="square" fill="black" d="M 50 11 Q 50.5 15 49.5 15 H 50.5 Q 49.9 15 51 11 Z" />
+
+  <path id="outline" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="transparent"
+    d="M 50.25 15
+      Q 38 20 35 25
+      Q 35.8 28.5 37 30
+      T 39 35
+      T 43 45
+      T 47 55
+      Q 50 59 55 60
+    " />
+
 </svg>

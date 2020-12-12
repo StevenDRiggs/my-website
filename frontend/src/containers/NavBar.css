@@ -3,7 +3,7 @@ div.navbar {
   height: 4em;
   position: sticky;
   top: 0;
-  background-color: #04587f;
+  background-color: #012738;
   padding-top: 1.2em;
   font-family: 'Fugaz One', cursive;
 }
@@ -19,7 +19,7 @@ div.navbar ul {
 }
 
 .navlink:hover, .navlink.active {
-  background-color: #5e587f;
+  background-color: #6a66e0;
 }
 
 .navlink, .navlink:active, .navlink:visited {

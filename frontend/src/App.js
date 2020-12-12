@@ -68,6 +68,12 @@ class App extends Component {
             ...initialState,
           })
         }
+        break
+
+      default:
+        this.setState({
+          ...initialState,
+        })
     }
   }
 

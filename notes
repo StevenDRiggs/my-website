@@ -1,5 +1,5 @@
-NavLinks: portfolio, about, blog, view/download resumes, contact
-hidden login for updating content 
+[x] NavLinks: portfolio, about, blog, view/download resumes, contact
+[x] hidden login for updating content 
 only when logged in, content may be added, changed, or deleted
 animated transitions
 don't use fade to black mouseovers (overused)

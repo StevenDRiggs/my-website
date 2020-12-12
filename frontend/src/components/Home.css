@@ -1,0 +1,14 @@
+#home {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+}
+
+#home-flexbox {
+  height: 100%;
+}
+
+#home-intro {
+  text-align: center;
+  align-self: center;
+}

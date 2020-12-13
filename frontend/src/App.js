@@ -81,7 +81,7 @@ class App extends Component {
     const { first, second, third } = this.state
 
     return (
-      <div className="App">
+      <div id="app">
         <div className='secret-div'>
           <div className={`secret-div-${first}`} onClick={this.handleSecretDivClick} id='first'></div>
           <div className={`secret-div-${second}`} onClick={this.handleSecretDivClick} id='second'></div>
@@ -90,7 +90,7 @@ class App extends Component {
         <Router>
           <NavBar />
           <Link to='/'>
-            <Logo id='logo' />
+            <Logo id='logo' alt='Chrysalis Logo' />
           </Link>
           {first && second && third
             ?

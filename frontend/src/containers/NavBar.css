@@ -1,4 +1,4 @@
-div.navbar {
+#navbar {
   width: 100vw;
   height: 4em;
   position: sticky;
@@ -8,7 +8,7 @@ div.navbar {
   font-family: 'Fugaz One', cursive;
 }
 
-div.navbar ul {
+#navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -26,3 +26,23 @@ div.navbar ul {
   text-decoration: none;
   color: whitesmoke;
 }
+
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    position: fixed;
+    width: 4em;
+    height: 100vh;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .navlink {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
+

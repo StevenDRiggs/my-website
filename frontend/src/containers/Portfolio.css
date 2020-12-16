@@ -1,0 +1,24 @@
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail-caption {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

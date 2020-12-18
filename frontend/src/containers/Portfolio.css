@@ -1,6 +1,13 @@
+#portfolio-grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 2em;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
 .thumbnail {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -29,5 +36,20 @@
     position: relative;
     left: 4rem;
     width: 80%;
+  }
+}
+
+@media screen and (400px < width <= 700px) {
+  #portfolio-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2.25em 1.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.25em 1em;
+    margin: auto;
   }
 }
